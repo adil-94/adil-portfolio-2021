@@ -2,13 +2,12 @@ import React, { forwardRef, useRef, useEffect } from 'react';
 import '../styles/styles.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-import { Grid, Card, CardContent, CssBaseline, Container, Typography, CardMedia, Paper } from '@material-ui/core';
+import { Grid, Card, CardContent, CssBaseline, Container, Button, CardMedia, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/styles.css'
 import ProfilePic from '../images/profile-pic-2.png'
 import Wave from '../images/wave123.png';
 import { ImFilePdf } from 'react-icons/im'
-import { AiFillFilePdf } from 'react-icons/ai'
 // import Wave from '../images/wave.png'
 
 const useStyles = makeStyles({
@@ -42,6 +41,11 @@ function Home() {
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, [])
+
+    const onDownloadResume = () => {
+        window.open('https://pdfhost.io/v/peT2sP06x_Adil_Pasha_C_Resume.pdf')
+    }
+
     return (
         <div id="about1" className="home_conatiner_grid">
             <CssBaseline />
@@ -55,8 +59,11 @@ function Home() {
                             I'm Adil Pasha
                         </div>
                         <p data-aos="fade-left" className="lead text-white">
-                        A passionate Web Developer and Mobile App Developer having an experience of building Web applications with Reactjs / Redux / Hooks / JavaScript  and some other cool libraries like Material-UI, Terra-UI along with animations.
+                            A passionate Web Developer and Mobile App Developer having an experience of building Web applications with Reactjs / Redux / Hooks / JavaScript  and some other cool libraries like Material-UI, Terra-UI along with animations.
                         </p>
+                        <div>
+                            <Button onClick={onDownloadResume} className="download-btn" variant="contained" startIcon={<ImFilePdf />}> SEE MY RESUME</Button>
+                        </div>
                     </Grid>
                     <Grid className="profile_img_grid" data-aos="fade-left" item lg={6} xl={6} md={6} sm={12} xs={12}>
                         <Paper className={classes.root}>
@@ -79,7 +86,7 @@ function Home() {
                 </svg>
             </div> */}
 
-            <div className="section-shape position-absolute"><img src="https://appco-react.themetags.com/img/wave-shap.svg" alt="shape"/></div>
+            <div className="section-shape position-absolute"><img src="https://appco-react.themetags.com/img/wave-shap.svg" alt="shape" /></div>
 
         </div>
     )

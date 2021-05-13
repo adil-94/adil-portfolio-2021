@@ -258,3 +258,8 @@
 .MuiStepIcon-root {
     color: #3f51b5 !important;
 }
+.download-btn {
+    margin: 10px !important;
+    background-color: #fff !important;
+    color: #6730e3 !important;
+}
