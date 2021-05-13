@@ -4,6 +4,7 @@
   .profile_img{
       width: 240px;
       height: 440px;
+      border-radius: 150px;
   }
   .profile_img_grid{
       display: flex;
@@ -54,6 +55,7 @@
     height: 200px;
     padding: 20px;
     width: 200px;
+    border-radius: 40px !important;
 }
 .paper_skills:hover{
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px #fff!important;
@@ -63,8 +65,15 @@
     height: 200px;
     padding: 20px;
     width: 160px;
+    border-radius: 40px !important;
     box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px #fff!important;
 }
+@media screen and (max-width: 360px) {
+    .paper_skills_xs {
+        width: 130px !important;
+        border-radius: 40px !important;
+    }
+  }
 .tr_exp_header{
     font-size: 30px;
     color: #fff;
@@ -214,6 +223,7 @@
 .expereince_container{
     background: #f4f7fa;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .ruby_text{
     margin: -5px;

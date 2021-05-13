@@ -14,7 +14,8 @@ import { FaGithub } from 'react-icons/fa'
 const useStyles = makeStyles({
     root: {
         maxWidth: 275,
-        paddingBottom: 5
+        paddingBottom: 5,
+        borderRadius: 200
     }
 });
 function Contact() {
