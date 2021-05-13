@@ -51,7 +51,7 @@ function Contact() {
                         </Button>
                         </div>
                         <div>
-                            <Grid container spacing={3}>
+                            <Grid data-aos="flip-left" container spacing={3}>
                                 <Grid item xs={2}>
                                     <Avatar className="email_icon">
                                         <MdEmail onClick={() => window.open('mailto:adil.shezin94@gmail.com')} color="#fff" size={30} />
@@ -80,8 +80,8 @@ function Contact() {
                             </Grid>
                         </div>
                     </Grid>
-                    {window.innerWidth < 960 ? '' : <Grid className="profile_img_grid" data-aos="fade-left" item lg={6} xl={6} md={6} sm={12} xs={12}>
-                        <Card className={classes.root}>
+                    {window.innerWidth < 960 ? '' : <Grid className="profile_img_grid" item lg={6} xl={6} md={6} sm={12} xs={12}>
+                        <Card data-aos="flip-left" className={classes.root}>
                             <CardContent className="reactout_card">
                                 <img className="profile_img" src="https://adil-94.github.io/adil-portfolio/static/media/adil_avtar.db13f6ce.jpeg" />
                             </CardContent>

@@ -255,3 +255,6 @@
 .reactout_card{
     padding-bottom: 5px !important;
 }
+.MuiStepIcon-root {
+    color: #3f51b5 !important;
+}
