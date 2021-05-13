@@ -22,12 +22,12 @@ function Contact() {
     const classes = useStyles();
     const [zoomin, setZoomin] = useState("");
 
-    const onEmail = () => {
-
+    const onGoogleMaps = () => {
+        window.open('https://www.google.com/maps/dir//Bengaluru,+Karnataka+560001,+India/@12.9715893,77.5245222,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!2m2!1d77.5945627!2d12.9715987!3e0')
     }
     return (
         <div id="contact1" className="contact_conatiner_grid">
-            <img src="https://appco-react.themetags.com/img/footer-top-shape.png"/>
+            <img src="https://appco-react.themetags.com/img/footer-top-shape.png" />
             <CssBaseline />
             <Container maxWidth="md">
                 <Grid container spacing={3}>
@@ -45,7 +45,7 @@ function Contact() {
                             <Button
                                 className="location_btn"
                                 variant="contained"
-                                // color="secondary"
+                                onClick={onGoogleMaps}
                                 startIcon={<ImLocation2 />}
                             > Bengaluru, India
                         </Button>
