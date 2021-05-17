@@ -13,7 +13,8 @@ import Paper from '@material-ui/core/Paper';
 import '../styles/styles.css'
 import { Container } from '@material-ui/core';
 import Logo from '../images/img9.jpeg';
-import SkillsParticles from '../presentational-components/skills_particles'
+import SkillsParticles from '../presentational-components/skills_particles';
+import Spring from '../presentational-components/spring'
 
 function MainContainer() {
     useEffect(()=>{

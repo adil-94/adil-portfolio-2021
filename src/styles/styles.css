@@ -58,8 +58,8 @@
     border-radius: 40px !important;
 }
 .paper_skills:hover{
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px #fff!important;
-    border-top: 4px solid #9629e6;
+    /* box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px #fff!important;
+    border-top: 4px solid #9629e6; */
 }
 .paper_skills_xs{
     height: 200px;

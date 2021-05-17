@@ -10,6 +10,7 @@ import { RiLinkedinFill, RiTwitterFill } from 'react-icons/ri'
 import { MdEmail } from 'react-icons/md'
 import { FiPhoneCall } from 'react-icons/fi'
 import { FaGithub } from 'react-icons/fa'
+import SpringCard from './spring'
 
 const useStyles = makeStyles({
     root: {
@@ -80,16 +81,12 @@ function Contact() {
                             </Grid>
                         </div>
                     </Grid>
-                    {window.innerWidth < 0 ? '' : <Grid data-aos="flip-left" className="profile_img_grid" item lg={6} xl={6} md={6} sm={12} xs={12}>
-                        <Avatar alt="Remy Sharp" 
-          src='https://adil-94.github.io/adil-portfolio/static/media/adil_avtar.db13f6ce.jpeg' 
-          className="centered avatar_full" />
-                        {/* <Card data-aos="flip-left" className={classes.root}>
-                            <CardContent className="reactout_card">
-                                <img className="profile_img" src="https://adil-94.github.io/adil-portfolio/static/media/adil_avtar.db13f6ce.jpeg" />
-                            </CardContent>
-                        </Card> */}
-                    </Grid>}
+                    <Grid data-aos="flip-left" className="profile_img_grid" item lg={6} xl={6} md={6} sm={12} xs={12}>
+                        <SpringCard dampen={100} deg={300} children={<Avatar alt="Remy Sharp"
+                            src='https://adil-94.github.io/adil-portfolio/static/media/adil_avtar.db13f6ce.jpeg'
+                            className="centered avatar_full" />}
+                        />
+                    </Grid>
                 </Grid>
             </Container>
         </div>

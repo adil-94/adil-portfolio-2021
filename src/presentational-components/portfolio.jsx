@@ -4,6 +4,7 @@ import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 import { makeStyles } from "@material-ui/core/styles";
 import CI from '../images/codeinsight.jpeg';
 import OSGTM from '../images/osgtm.png';
+import SpringCard from './spring'
 
 const useStyles = makeStyles({
     root: {
@@ -43,9 +44,9 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                     <Grid data-aos="fade-up-right" className="expereince_grid" item xl={11} lg={11} md={11} sm={10} xs={9}>
                         Projects
                     </Grid>
-                    <Grid  item xl={12} lg={12} md={12} sm={12} xs={12} >
+                    <Grid item xl={12} lg={12} md={12} sm={12} xs={12} >
                         <Stepper activeStep={0} orientation="vertical">
-                            <Step key={1} data-aos="zoom-out-right">
+                            <SpringCard dampen={50} deg={600} children={<Step key={1} data-aos="zoom-out-right">
                                 <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                     <Card className={classes.root}
                                         classes={{ root: cerner.raised ? classes.cardHovered : "" }}
@@ -72,8 +73,9 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                                         </CardContent>
                                     </Card>
                                 </StepLabel>
-                            </Step>
-                            <Step key={2} data-aos="zoom-out-left">
+                            </Step>}
+                            />
+                            <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-left">
                                 <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                     <Card className={classes.root}
                                         classes={{ root: tr.raised ? classes.cardHovered : "" }}
@@ -101,7 +103,8 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                                         </CardContent>
                                     </Card>
                                 </StepLabel>
-                            </Step>
+                            </Step>}
+                            />
                         </Stepper>
                     </Grid>
                 </Grid>

@@ -5,6 +5,7 @@ import { Grid, Card, CardContent, CssBaseline, Container, Typography, Avatar, Fo
 import { GiSkills, GiHook } from 'react-icons/gi'
 import Logo from '../images/img9.jpeg';
 import SkillsParticles from '../presentational-components/skills_particles'
+import SpringCard from './spring'
 const Skills = forwardRef(({ onBackClick }, ref) => {
     return (
         <div id="skills1" className="skills_container">
@@ -21,72 +22,73 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         Skills
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <FaReact color="rgb(0, 216, 255)" size={100} />
                             </div>
                             <h1>
                                 ReactJs
                             </h1>
-                        </Paper>
+                        </Paper>} />
                     </Grid>
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiRedux color="rgb(118, 74, 188)" size={100} />
                             </div>
                             <h1>
                                 Redux
                             </h1>
-                        </Paper>
+                        </Paper>}
+                        />
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"} >
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"} >
                             <div style={{ height: '125px' }}>
                                 <GiHook color="#0d2c5a" size={100} />
                             </div>
                             <h1>
                                 Hooks
                             </h1>
-                        </Paper>
+                        </Paper>}
+                        />
                     </Grid>
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiCss3 color="rgb(21, 114, 182)" size={100} />
                             </div>
                             <h1>
                                 CSS
                             </h1>
-                        </Paper>
+                        </Paper>}
+                        />
                     </Grid>
                     {window.innerWidth > 960 ? <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={0} xs={0}></Grid> : ''}
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiHtml5 color="rgb(228, 79, 38)" size={100} />
                             </div>
                             <h1>
                                 HTML
                             </h1>
-                        </Paper>
+                        </Paper>}
+                        />
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiRails color="rgb(204, 0, 0)" size={100} />
                             </div>
-                            <h1 className={window.innerWidth < 440 ? "ruby_text":''}>
+                            <h1 className={window.innerWidth < 440 ? "ruby_text" : ''}>
                                 Ruby On Rails
                             </h1>
-                        </Paper>
+                        </Paper>}
+                        />
                     </Grid>
                 </Grid>
             </Container>
-            {/* <svg className="skills_curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#fff" fill-opacity="1" 
-                d="M0,96L60,128C120,160,240,224,360,250.7C480,277,600,267,720,245.3C840,224,960,192,1080,186.7C1200,181,1320,203,1380,213.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-                </svg> */}
             <div
                 className="skills_wave" >
                 <svg data-name="Layer 1"
