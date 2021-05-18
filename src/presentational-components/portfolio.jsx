@@ -34,6 +34,8 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
     const classesStepper = useStylesStepper();
     const [tr, setTr] = useState({ raised: false, shadow: 1 })
     const [cerner, setCerner] = useState({ raised: false, shadow: 1 });
+    let avtarGridSize = window.innerWidth < 700 ? 12 : 1;
+    let cardGridSize = window.innerWidth < 700 ? 12 : 11
     return (
         <div id="portfolio1" className="portfolio_container">
             <CssBaseline />
@@ -47,12 +49,12 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                     <Grid data-aos="fade-up-right" className="projects-text" item xl={11} lg={11} md={11} sm={10} xs={9}>
                         Projects
                     </Grid>
-                    <Grid item xl={1} lg={1} md={1} sm={1} xs={1} className="portfolio-avtar-grid" >
+                    <Grid item xl={avtarGridSize} lg={avtarGridSize} md={avtarGridSize} sm={avtarGridSize} xs={avtarGridSize} className="portfolio-avtar-grid" >
                         <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
                             1
                     </Avatar>
                     </Grid>
-                    <Grid item xl={11} lg={11} md={11} sm={11} xs={11} >
+                    <Grid item xl={cardGridSize} lg={cardGridSize} md={cardGridSize} sm={cardGridSize} xs={cardGridSize} >
                         <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-right">
                             <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                 <Card className={classes.root}
@@ -83,12 +85,12 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                         </Step>}
                         />
                     </Grid>
-                    <Grid item xl={1} lg={1} md={1} sm={1} xs={1} className="portfolio-avtar-grid" >
+                    <Grid item xl={avtarGridSize} lg={avtarGridSize} md={avtarGridSize} sm={avtarGridSize} xs={avtarGridSize} className="portfolio-avtar-grid" >
                         <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
                             2
                         </Avatar>
                     </Grid>
-                    <Grid item xl={11} lg={11} md={11} sm={11} xs={11} >
+                    <Grid item xl={cardGridSize} lg={cardGridSize} md={cardGridSize} sm={cardGridSize} xs={cardGridSize} >
                         <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-left">
                             <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                 <Card className={classes.root}
