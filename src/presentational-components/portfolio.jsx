@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         maxWidth: '100%',
         // borderTop: '4px solid #9629e6',
         color: '#fff',
-        background : '#000',
+        background: '#000',
         boxShadow: 'rgb(255 255 255 / 50%) 0px 39px 56px -36px inset, rgb(150 41 230 / 30%) 0px 1px 4px 0px inset, rgb(150 41 230 / 30%) 0px -82px 68px -64px inset, rgb(150 41 230 / 30%) 0px 98px 100px -48px inset, rgb(150 41 230 / 30%) 0px 4px 18px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset'
     },
     media: {
@@ -53,31 +53,35 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                     </Avatar>
                     </Grid>
                     <Grid item xl={11} lg={11} md={11} sm={11} xs={11} >
-                        <SpringCard dampen={50} deg={600} children={
-                            <Card className={classes.root}
-                                classes={{ root: cerner.raised ? classes.cardHovered : "" }}
-                                onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
-                                onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
-                                raised={cerner.raised} zdepth={cerner.shadow}>
-                                <CardMedia
-                                    className={classes.media}
-                                    image={CI}
-                                    title="CodeInsight"
-                                />
-                                <CardContent>
-                                    <Typography className="typography_exp" variant="h5" color="textPrimary">
-                                        CodeInsight
+                        <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-right">
+                            <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
+                                <Card className={classes.root}
+                                    classes={{ root: cerner.raised ? classes.cardHovered : "" }}
+                                    onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
+                                    onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
+                                    raised={cerner.raised} zdepth={cerner.shadow}>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image={CI}
+                                        title="CodeInsight"
+                                    />
+                                    <CardContent>
+                                        <Typography className="typography_exp" variant="h5" color="textPrimary">
+                                            CodeInsight
                                                 </Typography>
-                                    <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
-                                        Oct 2018 - Present
+                                        <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
+                                            Oct 2018 - Present
                                                 </Typography>
-                                    <div>
-                                        CodeInsight is a internal tool for all associates of organization.
-                                        Where they can look for CRs which were changed in past to see what was the change made to a file or method.
-                                        They can view the difference between files. Create Tasks to Jira Directly from application in a single click, which reduces thier time.
+                                        <div>
+                                            CodeInsight is a internal tool for all associates of organization.
+                                            Where they can look for CRs which were changed in past to see what was the change made to a file or method.
+                                            They can view the difference between files. Create Tasks to Jira Directly from application in a single click, which reduces thier time.
                                                 </div>
-                                </CardContent>
-                            </Card>} />
+                                    </CardContent>
+                                </Card>
+                            </StepLabel>
+                        </Step>}
+                        />
                     </Grid>
                     <Grid item xl={1} lg={1} md={1} sm={1} xs={1} className="portfolio-avtar-grid" >
                         <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
