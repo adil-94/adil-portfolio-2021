@@ -9,7 +9,10 @@ import SpringCard from './spring'
 const useStyles = makeStyles({
     root: {
         maxWidth: '100%',
-        borderTop: '4px solid #9629e6'
+        // borderTop: '4px solid #9629e6',
+        color: '#fff',
+        background : '#000',
+        boxShadow: 'rgb(255 255 255 / 50%) 0px 39px 56px -36px inset, rgb(150 41 230 / 30%) 0px 1px 4px 0px inset, rgb(150 41 230 / 30%) 0px -82px 68px -64px inset, rgb(150 41 230 / 30%) 0px 98px 100px -48px inset, rgb(150 41 230 / 30%) 0px 4px 18px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset'
     },
     media: {
         height: 0,
@@ -41,71 +44,77 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                             <AiOutlineFundProjectionScreen size={40} />
                         </Avatar>
                     </Grid>
-                    <Grid data-aos="fade-up-right" className="expereince_grid" item xl={11} lg={11} md={11} sm={10} xs={9}>
+                    <Grid data-aos="fade-up-right" className="projects-text" item xl={11} lg={11} md={11} sm={10} xs={9}>
                         Projects
                     </Grid>
-                    <Grid item xl={12} lg={12} md={12} sm={12} xs={12} >
-                        <Stepper activeStep={0} orientation="vertical">
-                            <SpringCard dampen={50} deg={600} children={<Step key={1} data-aos="zoom-out-right">
-                                <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
-                                    <Card className={classes.root}
-                                        classes={{ root: cerner.raised ? classes.cardHovered : "" }}
-                                        onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
-                                        onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
-                                        raised={cerner.raised} zdepth={cerner.shadow}>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={CI}
-                                            title="CodeInsight"
-                                        />
-                                        <CardContent>
-                                            <Typography className="typography_exp" variant="h5" color="textPrimary">
-                                                CodeInsight
+                    <Grid item xl={1} lg={1} md={1} sm={1} xs={1} className="portfolio-avtar-grid" >
+                        <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
+                            1
+                    </Avatar>
+                    </Grid>
+                    <Grid item xl={11} lg={11} md={11} sm={11} xs={11} >
+                        <SpringCard dampen={50} deg={600} children={
+                            <Card className={classes.root}
+                                classes={{ root: cerner.raised ? classes.cardHovered : "" }}
+                                onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
+                                onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
+                                raised={cerner.raised} zdepth={cerner.shadow}>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={CI}
+                                    title="CodeInsight"
+                                />
+                                <CardContent>
+                                    <Typography className="typography_exp" variant="h5" color="textPrimary">
+                                        CodeInsight
                                                 </Typography>
-                                            <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
-                                                Oct 2018 - Present
+                                    <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
+                                        Oct 2018 - Present
                                                 </Typography>
-                                            <div>
-                                                CodeInsight is a internal tool for all associates of organization.
-                                                Where they can look for CRs which were changed in past to see what was the change made to a file or method.
-                                                They can view the difference between files. Create Tasks to Jira Directly from application in a single click, which reduces thier time.
+                                    <div>
+                                        CodeInsight is a internal tool for all associates of organization.
+                                        Where they can look for CRs which were changed in past to see what was the change made to a file or method.
+                                        They can view the difference between files. Create Tasks to Jira Directly from application in a single click, which reduces thier time.
                                                 </div>
-                                        </CardContent>
-                                    </Card>
-                                </StepLabel>
-                            </Step>}
-                            />
-                            <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-left">
-                                <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
-                                    <Card className={classes.root}
-                                        classes={{ root: tr.raised ? classes.cardHovered : "" }}
-                                        onMouseOver={() => setTr({ raised: true, shadow: 3 })}
-                                        onMouseOut={() => setTr({ raised: false, shadow: 1 })}
-                                        raised={tr.raised} zdepth={tr.shadow}>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={OSGTM}
-                                            title="OSGTM"
-                                        />
-                                        <CardContent>
-                                            <Typography className="typography_exp" variant="h5" color="textPrimary">
-                                                OSGTM
+                                </CardContent>
+                            </Card>} />
+                    </Grid>
+                    <Grid item xl={1} lg={1} md={1} sm={1} xs={1} className="portfolio-avtar-grid" >
+                        <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
+                            2
+                        </Avatar>
+                    </Grid>
+                    <Grid item xl={11} lg={11} md={11} sm={11} xs={11} >
+                        <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-left">
+                            <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
+                                <Card className={classes.root}
+                                    classes={{ root: tr.raised ? classes.cardHovered : "" }}
+                                    onMouseOver={() => setTr({ raised: true, shadow: 3 })}
+                                    onMouseOut={() => setTr({ raised: false, shadow: 1 })}
+                                    raised={tr.raised} zdepth={tr.shadow}>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image={OSGTM}
+                                        title="OSGTM"
+                                    />
+                                    <CardContent>
+                                        <Typography className="typography_exp" variant="h5" color="textPrimary">
+                                            OSGTM
                                             </Typography>
-                                            <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
-                                                Mar 2017 - Oct 2018
+                                        <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
+                                            Mar 2017 - Oct 2018
                                             </Typography>
-                                            <div>
-                                                Open GTM is a GST calculator tool for Honda Cars India.
-                                                User can enter order number or invoice number to see details of items.
-                                                Tool used to calculate all types of GST like CGST, SGST, IGST for their imports of items from China and Japan.
-                                                They can view weekly, monthly and yearly reports on application.
+                                        <div>
+                                            Open GTM is a GST calculator tool for Honda Cars India.
+                                            User can enter order number or invoice number to see details of items.
+                                            Tool used to calculate all types of GST like CGST, SGST, IGST for their imports of items from China and Japan.
+                                            They can view weekly, monthly and yearly reports on application.
                                             </div>
-                                        </CardContent>
-                                    </Card>
-                                </StepLabel>
-                            </Step>}
-                            />
-                        </Stepper>
+                                    </CardContent>
+                                </Card>
+                            </StepLabel>
+                        </Step>}
+                        />
                     </Grid>
                 </Grid>
             </Container>
