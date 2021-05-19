@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CI from '../images/codeinsight.jpeg';
 import OSGTM from '../images/osgtm.png';
 import SpringCard from './spring'
+import JB from '../images/jb.jpeg'
 
 const useStyles = makeStyles({
     root: {
@@ -116,6 +117,42 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                                             Tool used to calculate all types of GST like CGST, SGST, IGST for their imports of items from China and Japan.
                                             They can view weekly, monthly and yearly reports on application.
                                             </div>
+                                    </CardContent>
+                                </Card>
+                            </StepLabel>
+                        </Step>}
+                        />
+                    </Grid>
+                    <Grid item xl={avtarGridSize} lg={avtarGridSize} md={avtarGridSize} sm={avtarGridSize} xs={avtarGridSize} className="portfolio-avtar-grid" >
+                        <Avatar alt="Remy Sharp" src="" className="portfolio-avtar">
+                            3
+                    </Avatar>
+                    </Grid>
+                    <Grid item xl={cardGridSize} lg={cardGridSize} md={cardGridSize} sm={cardGridSize} xs={cardGridSize} >
+                        <SpringCard children={<Step key={3} data-aos="zoom-out-right">
+                            <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
+                                <Card className={classes.root}
+                                    classes={{ root: cerner.raised ? classes.cardHovered : "" }}
+                                    onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
+                                    onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
+                                    raised={cerner.raised} zdepth={cerner.shadow}>
+                                    <CardMedia
+                                        className={classes.media}
+                                        image={JB}
+                                        title="Journey Builder"
+                                    />
+                                    <CardContent>
+                                        <Typography className="typography_exp" variant="h5" color="textPrimary">
+                                            Journey Builder
+                                        </Typography>
+                                        <Typography className="typography_exp exp_period" variant="h6" color="textSecondary">
+                                            Oct 2018 - Present
+                                        </Typography>
+                                        <div>
+                                            Journey Builder is a tool for health care organizations.
+                                            Journey Builder is similar to Pluralsight where we assign a journey to each user which in turn has stages, activities.
+                                            Each step has training material like the audio, video to complete their mandatory exams.
+                                        </div>
                                     </CardContent>
                                 </Card>
                             </StepLabel>

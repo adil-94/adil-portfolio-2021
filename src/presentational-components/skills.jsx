@@ -3,7 +3,6 @@ import { FaReact, FaGithub } from 'react-icons/fa';
 import { SiRedux, SiRails, SiCss3, SiHtml5, SiJavascript, SiMysql } from 'react-icons/si';
 import { Grid, Card, CardContent, CssBaseline, Container, Typography, Avatar, FormControlLabel, Checkbox, FormGroup, Paper } from '@material-ui/core';
 import { GiSkills, GiHook } from 'react-icons/gi'
-import Logo from '../images/img9.jpeg';
 import SkillsParticles from '../presentational-components/skills_particles'
 import SpringCard from './spring'
 const Skills = forwardRef(({ onBackClick }, ref) => {
