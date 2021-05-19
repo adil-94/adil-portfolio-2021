@@ -31,7 +31,9 @@ function Home() {
                             I'm Adil Pasha
                         </div>
                         <p data-aos="fade-left" className="lead text-white">
-                            A passionate Web Developer and Mobile App Developer having an experience of building Web applications with Reactjs / Redux / Hooks / JavaScript  and some other cool libraries like Material-UI, Terra-UI along with animations.
+                            A passionate Web Developer and ReactJs  Developer having 4 years of experience in building Web applications with Reactjs / Redux / Hooks / JavaScript and some other cool libraries like Material-UI, Terra-UI along with animations.
+                            Knowledgeable of all the development cycle stages while working on Agile. With a good command of coding languages, I have been a key contributor to the project architecture and also for Code Reviews.
+                            Webpack and UX is some of the Add-ons.
                         </p>
                         <div>
                             <Button onClick={onDownloadResume} className="download-btn" variant="contained" startIcon={<ImFilePdf />}> SEE MY RESUME</Button>
@@ -39,9 +41,9 @@ function Home() {
                     </Grid>
                     <Grid item lg={6} xl={6} md={6} sm={12} xs={12}>
                         <SpringCard children={
-                        <div className="profile-glass-card">
-                            <img className="profile-glass-card-img" src={Adil} />
-                        </div>
+                            <div className="profile-glass-card">
+                                <img className="profile-glass-card-img" src={Adil} />
+                            </div>
                         }
                         />
                     </Grid>

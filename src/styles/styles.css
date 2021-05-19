@@ -317,13 +317,22 @@
     box-shadow: rgb(255 255 255 / 50%) 0px 39px 56px -36px inset, rgb(32 40 119 / 30%) 0px 1px 4px 0px inset, rgb(55 46 149 / 30%) 0px -82px 68px -64px inset, rgb(83 49 117 / 30%) 0px 98px 100px -48px inset, rgb(114 48 205 / 30%) 0px 4px 18px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset, rgb(0 228 228 / 20%) 0px 1px 40px 0px inset !important;
 }
 .profile-glass-card-img{
-    width: 250px;
+    width: 360px;
     height: auto;
-    /* border: 2px solid #000; */
     border-radius: 50%;
 }
 @media screen and (max-width: 340px) {
     .profile-glass-card-img {
-        width: 200px;
+        width: 230px;
     }
   }
+  @media screen and (min-width: 390px) and (max-width: 450px){
+    .profile-glass-card-img {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 341px) and (max-width: 390px){
+    .profile-glass-card-img {
+        width: 260px;
+    }
+}
