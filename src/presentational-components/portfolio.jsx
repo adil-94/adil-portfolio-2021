@@ -12,8 +12,8 @@ const useStyles = makeStyles({
         maxWidth: '100%',
         // borderTop: '4px solid #9629e6',
         color: '#fff',
-        background: '#000',
-        boxShadow: 'rgb(255 255 255 / 50%) 0px 39px 56px -36px inset, rgb(150 41 230 / 30%) 0px 1px 4px 0px inset, rgb(150 41 230 / 30%) 0px -82px 68px -64px inset, rgb(150 41 230 / 30%) 0px 98px 100px -48px inset, rgb(150 41 230 / 30%) 0px 4px 18px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset'
+        background: 'linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95))',
+        // boxShadow: 'rgb(255 255 255 / 50%) 0px 39px 56px -36px inset, rgb(150 41 230 / 30%) 0px 1px 4px 0px inset, rgb(150 41 230 / 30%) 0px -82px 68px -64px inset, rgb(150 41 230 / 30%) 0px 98px 100px -48px inset, rgb(150 41 230 / 30%) 0px 4px 18px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset, rgb(150 41 230 / 20%) 0px 1px 40px 0px inset'
     },
     media: {
         height: 0,
