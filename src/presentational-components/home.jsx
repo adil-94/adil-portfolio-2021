@@ -5,41 +5,11 @@ import 'aos/dist/aos.css';
 import { Grid, Card, CardContent, CssBaseline, Container, Button, CardMedia, Avatar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/styles.css'
-import ProfilePic from '../images/profile-pic-2.png';
 import Adil from '../images/Adil-profile.jpeg'
-import Wave from '../images/wave123.png';
 import { ImFilePdf } from 'react-icons/im'
 import SpringCard from './spring'
-// import Wave from '../images/wave.png'
 
-const useStyles = makeStyles({
-    root: {
-        width: 400,
-        display: 'flex',
-        justifyContent: 'center',
-        height: 440,
-        padding: 10,
-        boxShadow: 'none',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'contain',
-        background: 'url(http://appco-react.themetags.com/img/app-product.png)'
-    },
-    media: {
-        width: 330,
-        height: 410,
-    },
-    root2: {
-        width: 320,
-        height: 410,
-        padding: 10
-    },
-    media2: {
-        width: 300,
-        height: 380,
-    }
-});
 function Home() {
-    const classes = useStyles();
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
@@ -67,17 +37,8 @@ function Home() {
                             <Button onClick={onDownloadResume} className="download-btn" variant="contained" startIcon={<ImFilePdf />}> SEE MY RESUME</Button>
                         </div>
                     </Grid>
-                    {/* <Grid className="profile_img_grid" data-aos="fade-left" item lg={6} xl={6} md={6} sm={12} xs={12}>
-                        <Paper className={classes.root}>
-                            <img className="img-in-cell" src={ProfilePic} />
-                        </Paper>
-
-                    </Grid> */}
                     <Grid item lg={6} xl={6} md={6} sm={12} xs={12}>
                         <SpringCard children={
-                        //     <Avatar variant="square" >
-                        //     N
-                        //   </Avatar>
                         <div className="profile-glass-card">
                             <img className="profile-glass-card-img" src={Adil} />
                         </div>
