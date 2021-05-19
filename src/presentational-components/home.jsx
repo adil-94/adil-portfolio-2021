@@ -32,8 +32,6 @@ function Home() {
                         </div>
                         <p data-aos="fade-left" className="lead text-white">
                             A passionate Web Developer and ReactJs  Developer having 4 years of experience in building Web applications with Reactjs / Redux / Hooks / JavaScript and some other cool libraries like Material-UI, Terra-UI along with animations.
-                            Knowledgeable of all the development cycle stages while working on Agile. With a good command of coding languages, I have been a key contributor to the project architecture and also for Code Reviews.
-                            Webpack and UX is some of the Add-ons.
                         </p>
                         <div>
                             <Button onClick={onDownloadResume} className="download-btn" variant="contained" startIcon={<ImFilePdf />}> SEE MY RESUME</Button>
