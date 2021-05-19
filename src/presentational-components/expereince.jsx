@@ -37,7 +37,7 @@ const Expereince = forwardRef(({ onBackClick }, ref) => {
                         Expereince
                     </Grid>
                     <Grid data-aos="fade-down-right" item xl={6} lg={6} md={6} sm={6} xs={12} >
-                        <SpringCard dampen={100} deg={900} children={<Card className={classes.rootCerner}
+                        <SpringCard children={<Card className={classes.rootCerner}
                             classes={{ root: cerner.raised ? classes.cardHovered : "" }}
                             onMouseOver={() => setCerner({ raised: true, shadow: 3 })}
                             onMouseOut={() => setCerner({ raised: false, shadow: 1 })}
@@ -97,7 +97,7 @@ const Expereince = forwardRef(({ onBackClick }, ref) => {
                         />
                     </Grid>
                     <Grid data-aos="fade-down-left" item xl={6} lg={6} md={6} sm={6} xs={12} >
-                        <SpringCard dampen={100} deg={900} children={<Card className={classes.rootThomson}
+                        <SpringCard  children={<Card className={classes.rootThomson}
                             classes={{ root: tr.raised ? classes.cardHovered : "" }}
                             onMouseOver={() => setTr({ raised: true, shadow: 3 })}
                             onMouseOut={() => setTr({ raised: false, shadow: 1 })}

@@ -82,7 +82,7 @@ function Contact() {
                         </div>
                     </Grid>
                     <Grid data-aos="flip-left" className="profile_img_grid" item lg={6} xl={6} md={6} sm={12} xs={12}>
-                        <SpringCard dampen={100} deg={300} children={<Avatar alt="Remy Sharp"
+                        <SpringCard children={<Avatar alt="Remy Sharp"
                             src='https://adil-94.github.io/adil-portfolio/static/media/adil_avtar.db13f6ce.jpeg'
                             className="centered avatar_full" />}
                         />

@@ -2,12 +2,14 @@ import React, { forwardRef, useRef, useEffect } from 'react';
 import '../styles/styles.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-import { Grid, Card, CardContent, CssBaseline, Container, Button, CardMedia, Paper } from '@material-ui/core';
+import { Grid, Card, CardContent, CssBaseline, Container, Button, CardMedia, Avatar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/styles.css'
-import ProfilePic from '../images/profile-pic-2.png'
+import ProfilePic from '../images/profile-pic-2.png';
+import Adil from '../images/Adil-profile.jpeg'
 import Wave from '../images/wave123.png';
 import { ImFilePdf } from 'react-icons/im'
+import SpringCard from './spring'
 // import Wave from '../images/wave.png'
 
 const useStyles = makeStyles({
@@ -65,29 +67,26 @@ function Home() {
                             <Button onClick={onDownloadResume} className="download-btn" variant="contained" startIcon={<ImFilePdf />}> SEE MY RESUME</Button>
                         </div>
                     </Grid>
-                    <Grid className="profile_img_grid" data-aos="fade-left" item lg={6} xl={6} md={6} sm={12} xs={12}>
+                    {/* <Grid className="profile_img_grid" data-aos="fade-left" item lg={6} xl={6} md={6} sm={12} xs={12}>
                         <Paper className={classes.root}>
                             <img className="img-in-cell" src={ProfilePic} />
                         </Paper>
 
+                    </Grid> */}
+                    <Grid item lg={6} xl={6} md={6} sm={12} xs={12}>
+                        <SpringCard children={
+                        //     <Avatar variant="square" >
+                        //     N
+                        //   </Avatar>
+                        <div className="profile-glass-card">
+                            <img className="profile-glass-card-img" src={Adil} />
+                        </div>
+                        }
+                        />
                     </Grid>
                 </Grid>
             </Container>
-            {/* <div className="home_curve" >
-                <svg data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                    className="home-svg-1"
-                >
-                    <path
-                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
-                    </path>
-                </svg>
-            </div> */}
-
             <div className="section-shape position-absolute"><img src="https://appco-react.themetags.com/img/wave-shap.svg" alt="shape" /></div>
-
         </div>
     )
 }

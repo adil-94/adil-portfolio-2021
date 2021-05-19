@@ -55,7 +55,7 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                     </Avatar>
                     </Grid>
                     <Grid item xl={cardGridSize} lg={cardGridSize} md={cardGridSize} sm={cardGridSize} xs={cardGridSize} >
-                        <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-right">
+                        <SpringCard children={<Step key={2} data-aos="zoom-out-right">
                             <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                 <Card className={classes.root}
                                     classes={{ root: cerner.raised ? classes.cardHovered : "" }}
@@ -91,7 +91,7 @@ const Portfolio = forwardRef(({ onBackClick }, ref) => {
                         </Avatar>
                     </Grid>
                     <Grid item xl={cardGridSize} lg={cardGridSize} md={cardGridSize} sm={cardGridSize} xs={cardGridSize} >
-                        <SpringCard dampen={50} deg={600} children={<Step key={2} data-aos="zoom-out-left">
+                        <SpringCard children={<Step key={2} data-aos="zoom-out-left">
                             <StepLabel classes={{ iconContainer: classesStepper.iconContainer }}>
                                 <Card className={classes.root}
                                     classes={{ root: tr.raised ? classes.cardHovered : "" }}

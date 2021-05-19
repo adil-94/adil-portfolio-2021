@@ -22,7 +22,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         Skills
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <FaReact color="rgb(0, 216, 255)" size={100} />
                             </div>
@@ -32,7 +32,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         </Paper>} />
                     </Grid>
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiRedux color="rgb(118, 74, 188)" size={100} />
                             </div>
@@ -43,7 +43,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         />
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"} >
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"} >
                             <div style={{ height: '125px' }}>
                                 <GiHook color="#0d2c5a" size={100} />
                             </div>
@@ -54,7 +54,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         />
                     </Grid>
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiCss3 color="rgb(21, 114, 182)" size={100} />
                             </div>
@@ -66,7 +66,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                     </Grid>
                     {window.innerWidth > 960 ? <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={0} xs={0}></Grid> : ''}
                     <Grid data-aos="fade-left" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiHtml5 color="rgb(228, 79, 38)" size={100} />
                             </div>
@@ -77,7 +77,7 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                         />
                     </Grid>
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
-                        <SpringCard dampen={100} deg={0} children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
+                        <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"}>
                             <div style={{ height: '125px' }}>
                                 <SiRails color="rgb(204, 0, 0)" size={100} />
                             </div>
