@@ -1,6 +1,12 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './App.css';
 import MainContainer from './conatiner-components/main-container';
+import { makeStyles } from '@material-ui/core/styles';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Zoom from '@material-ui/core/Zoom';
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { BiChevronUp } from 'react-icons/bi'
 
 function debounce(fn, ms) {
   let timer
@@ -12,12 +18,37 @@ function debounce(fn, ms) {
     }, ms)
   };
 }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+}));
 
-function App() {
+
+
+function App(props) {
   const [dimensions, setDimensions] = React.useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
+  const { children, win } = props;
+  const classes = useStyles();
+
+  const trigger = useScrollTrigger({
+    target: win ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const onScrollTop = (event) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
@@ -33,10 +64,16 @@ function App() {
 
     }
   })
-  console.log("dimensions= ",dimensions)
   return (
     <div className="App">
       <MainContainer />
+      <Zoom in={trigger}>
+        <div onClick={onScrollTop} role="presentation" className={classes.root}>
+          <Fab color="primary" size="small" aria-label="scroll back to top">
+            <BiChevronUp size={30} />
+          </Fab>
+        </div>
+      </Zoom>
     </div>
   );
 }
