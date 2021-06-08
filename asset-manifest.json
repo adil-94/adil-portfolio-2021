@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/adil-portfolio-2021/static/css/main.8b773837.chunk.css",
-    "main.js": "/adil-portfolio-2021/static/js/main.db982fb6.chunk.js",
-    "main.js.map": "/adil-portfolio-2021/static/js/main.db982fb6.chunk.js.map",
-    "runtime-main.js": "/adil-portfolio-2021/static/js/runtime-main.c80aebda.js",
-    "runtime-main.js.map": "/adil-portfolio-2021/static/js/runtime-main.c80aebda.js.map",
+    "main.js": "/adil-portfolio-2021/static/js/main.5159b8f4.chunk.js",
+    "main.js.map": "/adil-portfolio-2021/static/js/main.5159b8f4.chunk.js.map",
+    "runtime-main.js": "/adil-portfolio-2021/static/js/runtime-main.eec9355d.js",
+    "runtime-main.js.map": "/adil-portfolio-2021/static/js/runtime-main.eec9355d.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/adil-portfolio-2021/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.7c2b4cca.chunk.js": "/adil-portfolio-2021/static/js/2.7c2b4cca.chunk.js",
-    "static/js/2.7c2b4cca.chunk.js.map": "/adil-portfolio-2021/static/js/2.7c2b4cca.chunk.js.map",
-    "static/js/3.91955289.chunk.js": "/adil-portfolio-2021/static/js/3.91955289.chunk.js",
-    "static/js/3.91955289.chunk.js.map": "/adil-portfolio-2021/static/js/3.91955289.chunk.js.map",
+    "static/js/2.ddc8cee6.chunk.js": "/adil-portfolio-2021/static/js/2.ddc8cee6.chunk.js",
+    "static/js/2.ddc8cee6.chunk.js.map": "/adil-portfolio-2021/static/js/2.ddc8cee6.chunk.js.map",
+    "static/js/3.c257bc25.chunk.js": "/adil-portfolio-2021/static/js/3.c257bc25.chunk.js",
+    "static/js/3.c257bc25.chunk.js.map": "/adil-portfolio-2021/static/js/3.c257bc25.chunk.js.map",
     "index.html": "/adil-portfolio-2021/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/adil-portfolio-2021/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.8b773837.chunk.css.map": "/adil-portfolio-2021/static/css/main.8b773837.chunk.css.map",
-    "static/js/2.7c2b4cca.chunk.js.LICENSE.txt": "/adil-portfolio-2021/static/js/2.7c2b4cca.chunk.js.LICENSE.txt",
+    "static/js/2.ddc8cee6.chunk.js.LICENSE.txt": "/adil-portfolio-2021/static/js/2.ddc8cee6.chunk.js.LICENSE.txt",
     "static/media/Adil-profile.67ecc8ae.jpeg": "/adil-portfolio-2021/static/media/Adil-profile.67ecc8ae.jpeg",
     "static/media/codeinsight.f3598dee.jpeg": "/adil-portfolio-2021/static/media/codeinsight.f3598dee.jpeg",
     "static/media/jb.9decca57.jpeg": "/adil-portfolio-2021/static/media/jb.9decca57.jpeg",
     "static/media/osgtm.51f3490c.png": "/adil-portfolio-2021/static/media/osgtm.51f3490c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c80aebda.js",
+    "static/js/runtime-main.eec9355d.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.7c2b4cca.chunk.js",
+    "static/js/2.ddc8cee6.chunk.js",
     "static/css/main.8b773837.chunk.css",
-    "static/js/main.db982fb6.chunk.js"
+    "static/js/main.5159b8f4.chunk.js"
   ]
 }
