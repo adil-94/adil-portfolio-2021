@@ -44,10 +44,10 @@ const Skills = forwardRef(({ onBackClick }, ref) => {
                     <Grid data-aos="fade-right" item xl={3} lg={3} md={3} sm={4} xs={6}>
                         <SpringCard  children={<Paper className={window.innerWidth < 440 ? "paper_skills_xs" : "paper_skills"} >
                             <div style={{ height: '125px' }}>
-                                <GiHook color="#0d2c5a" size={100} />
+                                <SiJavascript color="#0d2c5a" size={100} />
                             </div>
                             <h1>
-                                Hooks
+                                JavaScript
                             </h1>
                         </Paper>}
                         />

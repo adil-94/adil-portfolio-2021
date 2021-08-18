@@ -58,27 +58,28 @@ const Expereince = forwardRef(({ onBackClick }, ref) => {
                                 <ul>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Developing UI for user stories
+                                        Created a responsive UI using Material UI.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Enhancements existing software with minimal guidance
+                                        Created Associate IDP for authentication which is
+                                        Cerner standard authentication.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Involve in code reviews and identify issues or deviations from the best practices
+                                        Track usage of application using Blazer gem which helped my team to generate weekly and monthly reports easily.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Collaborating on component level technical designs and suggesting the best approach
+                                        Incorporated JIRA APIs within application for all JIRA related operations from application.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Develop high-quality software design and architecture
+                                            Develop high-quality software design and architecture.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
@@ -88,7 +89,7 @@ const Expereince = forwardRef(({ onBackClick }, ref) => {
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Provide support for the software releases
+                                        CI/CD Docker.
                                         </Typography>
                                     </li>
                                 </ul>
@@ -118,42 +119,42 @@ const Expereince = forwardRef(({ onBackClick }, ref) => {
                                 <ul>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Developing UI for user stories
+                                        Created a responsive UI using Material UI.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Execute full software development life cycle  SDLC 
+                                        Automated scripts for processing invoice, shipping bill and order details.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Write well-designed, testable code
+                                        Develop new Enhancements based on requirements.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Produce specifications and determine operational feasibility
+                                        Animations using AOS.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Integrate software components into a fully functional software system
+                                            Dashboard for weekly, monthly and yearly reports.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Develop software verification plans and quality assurance procedures
+                                            Auto triggering email to client when weekly reports are generated.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Develop high-quality software design and architecture
+                                            Deploying app on linux servers.
                                         </Typography>
                                     </li>
                                     <li className="li_items">
                                         <Typography variant="body2" color="textSecondary">
-                                            Ensure software is up-to-date
+                                            Super user functionality which allow super client to edit, delete and create calculations.
                                         </Typography>
                                     </li>
                                 </ul>
